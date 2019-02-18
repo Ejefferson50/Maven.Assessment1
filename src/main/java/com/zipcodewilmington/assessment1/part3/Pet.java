@@ -8,8 +8,8 @@ public abstract class Pet implements Animal {
      * nullary constructor
      * by default, pet has age of 0; name of "";
      */
-    String petName = "Reina";
-    Integer petAge = 6;
+    String petName ="";
+    Integer petAge = Integer.MAX_VALUE;
     public Pet() {
 
 
@@ -59,6 +59,7 @@ public abstract class Pet implements Animal {
      * ensure this instance of `Pet` is added to the owner's composite `pets` list
      */
     public void setOwner(PetOwner newPetOwner) {
+
     }
 
     /**

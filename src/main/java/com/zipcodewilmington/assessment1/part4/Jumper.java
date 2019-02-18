@@ -7,11 +7,11 @@ public class Jumper {
      */
     public int jumps(int k, int j) {
         Integer numOfJumps = 0;
-        if (k / j == 0){
+        if (k % j == 0){
             numOfJumps = k / j;
 
-        }else if (k % 2 == 1){
-            int result = k / j;
+        }else if (k % 2 != 0){
+            int result = k % j;
             numOfJumps = result + 1;
         }
         return numOfJumps;

@@ -9,9 +9,9 @@ public class Dog extends Pet {
      * @param age age of this dog
      */
 
-    String dogName = "Batdog";
-    Integer dogAge = 10;
-    String dogSpeak = "bark";
+    String dogName = "Dog Name";
+    Integer dogAge = Integer.MAX_VALUE;
+    String dogSpeak = "Bark";
 
     public Dog(String name, Integer age) {
 
