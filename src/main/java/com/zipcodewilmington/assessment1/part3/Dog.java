@@ -8,7 +8,15 @@ public class Dog extends Pet {
      * @param name name of this Dog
      * @param age age of this dog
      */
+
+    String dogName = "Batdog";
+    Integer dogAge = 10;
+    String dogSpeak = "bark";
+
     public Dog(String name, Integer age) {
+
+        this.dogName = name;
+        this.dogAge = age;
 
     }
 
@@ -16,12 +24,16 @@ public class Dog extends Pet {
      * @param age age of this dog
      */
     public Dog(Integer age) {
+
+        this.dogAge = age;
     }
 
     /**
      * @param name name of this dog
      */
     public Dog(String name) {
+
+        this.dogName = name;
 
     }
 
@@ -38,6 +50,7 @@ public class Dog extends Pet {
      * @return bark as a string
      */
     public String speak() {
-        return null;
+
+        return this.dogSpeak;
     }
 }

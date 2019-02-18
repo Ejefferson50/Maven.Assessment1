@@ -8,7 +8,15 @@ public class Cat extends Pet {
      * @param name name of this Cat
      * @param age age of this Cat
      */
+    String catName = "Wiggles";
+    Integer catAge =  5;
+
+
     public Cat(String name, Integer age) {
+
+        this.catName = name;
+        this.catAge = age;
+
 
     }
 
@@ -16,12 +24,17 @@ public class Cat extends Pet {
      * @param age age of this Cat
      */
     public Cat(Integer age) {
+
+        this.catAge = age;
+
     }
 
     /**
      * @param name name of this Cat
      */
     public Cat(String name) {
+
+        this.catName = name;
 
     }
 
@@ -33,11 +46,12 @@ public class Cat extends Pet {
      */
     public Cat() {
     }
-
+    String catSpeak = "meow";
     /**
      * @return meow as a string
      */
     public String speak() {
-        return null;
+
+return catSpeak;
     }
 }

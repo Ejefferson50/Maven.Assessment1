@@ -11,7 +11,13 @@ public class ArrayUtils {
      * Given an array of objects, named `objectArray`, and an object `objectToCount`, return the number of times the `objectToCount` appears in the `objectArray`
      */
     public static Integer getNumberOfOccurrences(Object[] objectArray, Object objectToCount) {
-        return null;
+
+        int occurrences = 0;
+        for (int index = 0; index <= objectArray.length-1; index++)
+            if (objectArray[index] == objectToCount)
+                occurrences = occurrences + 1;
+
+        return occurrences;
     }
 
     /**
@@ -21,8 +27,21 @@ public class ArrayUtils {
      * Given an array of objects, name `objectArray`, and an object `objectToRemove`, return an array of objects with identical contents excluding `objectToRemove`
      */
     public static Object[] removeValue(Object[] objectArray, Object objectToRemove) {
-        return null;
+
+     /*   ArrayList<Object> valueRemoved = new ArrayList<Object>();
+      for (int i = 0; i < objectArray.length; i++) {
+          if (objectArray[i] != objectToRemove) {
+              valueRemoved.add(i);
+          } else
+              valueRemoved.add("");
+      }
+         valueRemoved.toArray();
+      Integer.
+      }*/
+     return null;
     }
+
+
 
     /**
      * @param objectArray an array of any type of Object
@@ -30,6 +49,15 @@ public class ArrayUtils {
      * given an array of objects, named `objectArray` return the most frequently occuring object in the array
      */
     public static Object getMostCommon(Object[] objectArray) {
+        /*for (int i = 0; i < objectArray.length-1; i++){
+            for (int j = i + 1; j < objectArray.length;j++){
+                if (objectArray[i].equals(objectArray[j])){
+
+
+                }
+                Object mostCommon = objectArray[i];
+            }
+        }*/
         return null;
     }
 
@@ -50,6 +78,8 @@ public class ArrayUtils {
      * given two arrays `objectArray` and `objectArrayToAdd`, return an array containing all elements in `objectArray` and `objectArrayToAdd`
      */
     public static Object[] mergeArrays(Object[] objectArray, Object[] objectArrayToAdd) {
-        return null;
+        //ArrayList<Object> merge = new ArrayList<>();
+
+    return null;
     }
 }
